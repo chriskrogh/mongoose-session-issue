@@ -45,5 +45,6 @@ import mongoose from "mongoose";
   await session.commitTransaction();
   await session.endSession({});
 
+  // throws
   await blogs[0].populate("author").execPopulate();
 })();
